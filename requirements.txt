@@ -1,0 +1,5 @@
+tensorflow
+Flask
+streamlit
+numpy
+pandas

@@ -1,0 +1,13 @@
+test.py
+pointeurs.txt
+tfEnv
+venv
+checkpoint
+cp.ckpt.index
+cp.ckpt.data-00000-of-00001
+*.npy
+node_modules
+grocery_store_dataset
+homemade_grocery_dataset
+reduced_grocery_store_dataset
+preprocessed_homemade_grocery_dataset

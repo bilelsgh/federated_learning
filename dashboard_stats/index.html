@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Federated learning dashboard</title>
+    </head>
+
+    <body>
+        <table align="center" style="width: 50%;">
+            <!-- Global accuracy -->
+            <tr> 
+                <td colspan="5">
+                <h3 style="font-family: sans-serif; color:rgb(63, 60, 60)">Global model</h3>
+                
+                <canvas id="globalChart"></canvas></td>
+        </tr>
+
+        <!-- Devices' accuracy -->
+        <tr>
+            <td>
+                <h3 style="font-family: sans-serif; color:rgb(63, 60, 60)">Device #1</h3>
+                <canvas id="device1"></canvas></td>
+
+            <td>
+                <h3 style="font-family: sans-serif; color:rgb(63, 60, 60)">Device #2</h3>
+                <canvas id="device2"></canvas></td>
+
+            <td>
+                <h3 style="font-family: sans-serif; color:rgb(63, 60, 60)">Device #3</h3>
+                <canvas id="device3"></canvas></td>
+            </td>
+        </tr>
+
+       </table>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+        <script>
+
+            createChart([],"globalChart","EVAL_ACC","MODEL_perf",[]);
+            createChart([],"device1","device1","",[]);
+            createChart([],"device2","device2","",[]);
+            createChart([],"device3","device3","",[]);
+
+
+        </script>
+      
+        
+    </body>
+</html>
